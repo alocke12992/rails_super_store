@@ -1,2 +1,18 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
+<h1><%= @dept.name %></h1>
+
+<%= link_to 'Create New Item', new_dept_item_path(@dept) %> 
+<div>
+  <% @items.each do |i| %>
+    <div>
+      <img src="<%= i.img %>" alt='itm' height=200px> 
+      <h3><%= i.name %></h3>
+      <h4>Price: $<%= i.price %></h4>
+      <h4>Description:</h4>
+      <p><%= i.desc %></p>
+
+    </div>
+    
+  <% end %> 
+</div>
+
+

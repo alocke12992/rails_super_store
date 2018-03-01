@@ -1,0 +1,18 @@
+<h1><%= @item.id ? 'Edit Item' : 'Create Item' %></h1>
+<hr /> 
+<%= form_for [@dept, @item] do |f| %> 
+  <%= f.label :name %> 
+  <%= f.text_field :name, required: true, autofocus: true %> 
+  <br /> 
+  <%= f.label :desc %> 
+  <%= f.text_area :desc, required: true %> 
+  <br /> 
+  <%= f.label :price %> 
+  <%= f.text_field :price, require: true %> 
+  <br /> 
+  <%= f.label :image %> 
+  <%= f.text_field :img, require: true %> 
+  <br /> 
+  <%= f.submit %> 
+<% end %> 
+

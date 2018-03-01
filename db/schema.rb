@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20180301033605) do
     t.string "name"
     t.text "desc"
     t.integer "price"
+    t.string "img"
     t.bigint "dept_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

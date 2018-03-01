@@ -4,7 +4,7 @@
 <ul>
   <% @depts.each do |dept| %> 
     <li>
-      <%= link_to dept.name %> 
+      <h2><%= link_to dept.name, dept%></h2>
     </li>
   <% end %> 
 </ul>
